@@ -1,0 +1,68 @@
+.hero {
+  padding-top: 110px;
+  padding-bottom: 50px;
+
+  background-image: url(../images/hero/hero-m-bckg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 768px;
+}
+
+.hero-title {
+  width: 280px;
+
+  font-family: var(--font-family-1);
+  font-weight: 800;
+  font-size: var(--font-regular);
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+
+  color: var(--h-text-color);
+
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  font-family: var(--font-family-1);
+  font-weight: 700;
+  font-size: var(--font-size-main);
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+
+  color: var(--h-text-color);
+
+  margin-bottom: 30px;
+}
+
+.hero-subtext {
+  font-weight: 500;
+
+  color: var(--p-text-color);
+}
+
+.hero-text-item {
+  font-weight: 700;
+
+  color: var(--accent-color);
+}
+
+.hero-button {
+  width: 260px;
+  height: 48px;
+
+  background-color: var(--accent-color);
+  border: none;
+  margin-bottom: 30px;
+
+  font-family: var(--font-family-1);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  text-align: var(--p-dark-t-color);
+}
