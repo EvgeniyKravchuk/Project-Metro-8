@@ -1,0 +1,142 @@
+.header {
+  position: relative;
+  & .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &.is-open {
+    background-color: rgba(17, 21, 24, 0.9);
+  }
+
+  @media screen and(min-width: 1280 px) {
+  }
+}
+
+.logo {
+  display: block;
+  color: var(--h-text-color);
+  // display: flex;
+  // align-items: center;
+  // justify-content: baseline;
+  // flex-wrap: wrap;
+  // flex-basis: content;
+  // width: 80px;
+
+  &.is-open {
+    color: white;
+    z-index: 1;
+  }
+
+  &__text {
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: 800;
+    font-size: var(--font-regular);
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+  }
+
+  &__fire {
+    width: 14px;
+    height: 19px;
+  }
+
+  &__undertitle-right,
+  &__undertitle-left {
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 1.16;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-wrap: wrap;
+
+  width: 100px;
+}
+
+.logo-wrapper__item {
+  display: inline-block;
+}
+
+.site-nav-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.site-nav__link {
+  font-family: var(--font-family-1);
+  font-style: normal;
+  font-weight: 800;
+  font-size: var(--font-regular);
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+
+  color: var(--p-dark-t-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  min-width: 260px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  cursor: pointer;
+
+  font-family: var(--font-family-1);
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--font-m-size);
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header__button-link {
+  color: inherit;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .site-nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__button {
+    margin-left: auto;
+  }
+
+  .logo {
+    display: block;
+    width: 128px;
+  }
+}
