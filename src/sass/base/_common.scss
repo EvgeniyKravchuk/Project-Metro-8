@@ -1,35 +1,44 @@
-body {
-  text-decoration-color: black;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
-p {
-  padding: 0;
-  margin: 0;
-}
-span {
-  padding: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
+h6,
+p,
 ul,
-ol {
+ol,
+li {
   margin: 0;
-  padding: 0;
-  list-style: none;
 }
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
-.adress {
-  margin-left: auto;
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
 }
