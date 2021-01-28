@@ -31,7 +31,7 @@
   }
 
   @media screen and (min-width: 1680px) {
-    padding-left: 45px;
+    padding-left: 52px;
   }
 }
 
@@ -50,7 +50,13 @@
   height: 20px;
   top: 0;
   left: 0;
-  background-image: url('../images/svg/fire-mini.svg');
+  background: url('../images/svg/fire-mini.svg');
+  background-size: contain;
+
+  @media screen and (min-width: 1680px) {
+    width: 22px;
+    height: 30px;
+  }
 }
 
 .guarantee-list__item:not(:last-child)::after {
@@ -66,8 +72,10 @@
     height: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1680px) {
     height: 40px;
+    top: 34px;
+    left: 11px;
   }
 }
 
@@ -79,7 +87,7 @@
 
   color: var(--p-text-g-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1680px) {
     font-size: var(--font-regular);
     line-height: 28px;
   }
