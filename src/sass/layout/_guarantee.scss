@@ -1,9 +1,31 @@
-.guarantee .title {
+.guarantee {
+  padding-top: 50px;
+
+  @media screen and (min-width: 1680px) {
+    padding-top: 130px;
+  }
+}
+
+.guarantee-title {
   margin-bottom: 30px;
   text-align: center;
+  font-family: var(--font-family-1);
+  font-weight: 800;
+  font-size: var(--font-regular);
+  line-height: 26px;
+  letter-spacing: 0.03em;
+
+  color: var(--h-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
 
   @media screen and (min-width: 1680px) {
     margin-bottom: 50px;
+    font-size: var(--font-h-size);
+    line-height: 60px;
   }
 }
 
