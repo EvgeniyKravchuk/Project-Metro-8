@@ -269,9 +269,19 @@
       border-right: 1px solid var(--p-text-color);
       font-size: 20px;
       line-height: 1.2;
+      padding-right: 24px;
       &-icon {
         width: 24px;
       }
+    }
+    .tel-i-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+    }
+    .instagram-icon {
+      padding-left: 24px;
     }
   }
 }
