@@ -17,7 +17,7 @@
   color: var(--p-dark-t-color);
 }
 
-.programm-points {
+.programm-line {
   position: absolute;
   top: 132px;
   display: block;
@@ -28,12 +28,14 @@
 }
 
 .programm-list {
-  margin-left: 100px;
+  margin-left: 74px;
   margin-bottom: 50px;
 }
 
 .programm-list-heading {
+  position: relative;
   margin-bottom: 5px;
+  padding-left: 32px;
 
   font-family: var(--font-family-1);
   font-weight: bold;
@@ -43,6 +45,20 @@
   text-transform: uppercase;
 
   color: var(--p-dark-t-color);
+}
+
+.list-heading > .heading-points {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #ff6b09;
+  border-radius: 50%;
+  margin-bottom: 3px;
+}
+
+.list-heading {
+  display: flex;
+  align-items: center;
 }
 
 .programm-secondary-heading {
@@ -77,6 +93,7 @@
 
 .programm-box {
   display: block;
+  padding-left: 32px;
 }
 
 .programm-box:not(:last-child) {
