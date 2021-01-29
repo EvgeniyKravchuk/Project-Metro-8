@@ -7,14 +7,14 @@
     height: 100%;
   }
 
-  &.is-open {
-    background-color: rgba(17, 21, 24, 0.9);
-  }
+  // &.is-open {
+  //   background-color: rgba(17, 21, 24, 0.9);
+  // }
   @media screen and(min-width: 768px) {
     padding-top: 40px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1480px) {
     padding-top: 34px;
   }
 }
@@ -32,13 +32,13 @@
     margin-right: 239px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1344px) {
     margin-right: 144px;
   }
 
   &.is-open {
     color: white;
-    z-index: 1;
+    z-index: 2;
   }
 
   &__text {
@@ -96,18 +96,26 @@
 }
 
 .site-nav {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1343px) {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 110px;
+    margin-bottom: 50px;
   }
 }
 
 .site-nav-list {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1344px) {
     display: flex;
     align-items: center;
+  }
+}
+
+.site-nav-list__item {
+  &:not(:last-child) {
+    @media screen and (min-width: 1344px) {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -125,7 +133,7 @@
     font-size: 26px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1344px) {
     font-family: var(--font-family-1);
     font-style: normal;
     font-weight: 700;
@@ -147,8 +155,8 @@
   justify-content: center;
   align-items: center;
 
-  margin-right: auto;
-  margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
 
   min-width: 260px;
   padding-top: 14px;
@@ -166,11 +174,15 @@
   text-transform: uppercase;
   color: var(--accent-color);
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1480px) {
     min-width: 336px;
     padding: 27px 23px 26px 24px;
 
@@ -183,15 +195,13 @@
   color: inherit;
 }
 
-.header__button.on-tablet {
+.header__button.main {
   display: none;
-  @media screen and(min-width: 768px) and (max-width: 1279px) {
+  @media screen and(min-width: 768px) {
     display: block;
   }
 
-  .header.is-open & {
-    @media screen and(min-width: 768px) and (max-width: 1279px) {
-      visibility: hidden;
-    }
+  @media screen and(min-width: 1344px) {
+    margin-left: auto;
   }
 }
