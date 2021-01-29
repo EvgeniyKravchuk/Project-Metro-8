@@ -5,9 +5,11 @@
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {
-    width: 730px;
+    width: 718px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
-  @media screen and (min-width: 1680px) {
-    width: 1354px;
+  @media screen and (min-width: 1344px) {
+    width: 1344px;
   }
 }
