@@ -116,12 +116,8 @@
   justify-content: baseline;
   flex-wrap: wrap;
   flex-basis: content;
-  width: 95px;
 }
-.logo-pic {
-  width: 15px;
-  height: 21px;
-}
+
 .logo-text {
   font-family: var(--font-family-1);
   font-style: normal;
@@ -204,6 +200,7 @@
         margin-top: 21px;
       }
       & .phone {
+        margin-top: 20px;
         font-size: 14px;
         line-height: 1.214;
         &-icon {
@@ -213,6 +210,42 @@
     }
     .instagram-icon {
       margin-top: 9px;
+    }
+  }
+  .tel-i-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .licence-text {
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-link {
+    width: 95px;
+  }
+  .logo-pic {
+    width: 15px;
+    height: 21px;
+  }
+  .logo-text {
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 0.04em;
+    color: var(--h-text-color);
+    &-small {
+      font-family: var(--font-family-1);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 6px;
+      line-height: 1.25;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--h-text-color);
     }
   }
 }
@@ -231,7 +264,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) and (max-width: 1343px) {
   .footer {
     & .contact-form {
       display: block;
@@ -263,7 +296,9 @@
     }
     .contact-list {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding-right: 40px;
+      padding-left: 40px;
     }
     & .phone {
       border-right: 1px solid var(--p-text-color);
@@ -284,10 +319,43 @@
       padding-left: 24px;
     }
   }
+  .licence-text {
+    display: inline-block;
+    padding-left: 40px;
+  }
+  .logo-link {
+    width: 128px;
+  }
+  .logo-pic {
+    width: 22px;
+    height: 30px;
+  }
+  .logo-text {
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.231;
+    letter-spacing: 0.04em;
+    color: var(--h-text-color);
+    &-small {
+      font-family: var(--font-family-1);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 8px;
+      line-height: 1.25;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--h-text-color);
+    }
+  }
+  .accent-text-s {
+    color: var(--accent-color);
+  }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1679px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1679px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1343px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1343px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1343px) {
   .footer {
     & .contact-form {
       padding-top: 100px;
@@ -299,11 +367,8 @@
   }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1344px) {
   .footer {
-    .abc {
-      min-width: 320px;
-    }
     & .contact-form {
       padding-top: 100px;
       padding-bottom: 62px;
@@ -311,11 +376,112 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    &-title {
+      margin-bottom: 50px;
+      font-size: var(--font-h-size);
+      line-height: 1.304;
+      max-width: 1090px;
+      text-align: center;
+      align-items: center;
+    }
+    &-text {
+      margin-bottom: 50px;
+      font-size: 30px;
+      line-height: 1.233;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .modal-form {
+      &-field {
+        padding-bottom: 30px;
+      }
+      &-input {
+        width: 478px;
+        height: 70px;
+        &::placeholder {
+          font-size: var(--font-regular);
+          line-height: 1.2;
+        }
+      }
+    }
+    &-btn {
+      margin-top: 50px;
+      width: 354px;
+      height: 70px;
+      font-size: var(--font-size-main);
+      line-height: 1.214;
+    }
+    .contact-list {
+      flex-direction: row;
+      padding-right: 183px;
+      padding-left: 183px;
+    }
+    & .phone {
+      border-right: 1px solid var(--p-text-color);
+      font-size: 30px;
+      line-height: 1.233;
+      padding-right: 24px;
+      &-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+      }
+    }
+    .tel-i-wrapper {
+      display: flex;
+      margin-left: 290px;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+    }
+    .instagram-icon {
+      padding-left: 24px;
+    }
+  }
+  .licence-text {
+    display: inline-block;
+    font-size: var(--font-size-main);
+    line-height: 2;
+  }
+  .logo-link {
+    width: 128px;
+  }
+  .logo-pic {
+    width: 22px;
+    height: 30px;
+  }
+  .logo-text {
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.231;
+    letter-spacing: 0.04em;
+    color: var(--h-text-color);
+    &-small {
+      font-family: var(--font-family-1);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 8px;
+      line-height: 1.25;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--h-text-color);
+    }
+  }
+  .accent-text-s {
+    color: var(--accent-color);
+  }
+  .licence-container {
+    padding-left: 183px;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1680px),
-  screen and (min-resolution: 192dpi) and (min-width: 1680px),
-  screen and (min-resolution: 2dppx) and (min-width: 1680px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1344px),
+  screen and (min-resolution: 192dpi) and (min-width: 1344px),
+  screen and (min-resolution: 2dppx) and (min-width: 1344px) {
   .footer {
     & .contact-form {
       padding-top: 100px;
