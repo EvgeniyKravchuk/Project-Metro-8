@@ -1,8 +1,8 @@
 .page-programm {
+  position: relative;
   background-color: var(--h-text-color);
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    position: relative;
     padding-top: 50px;
     padding-bottom: 470px;
     margin-bottom: 231px;
@@ -45,8 +45,8 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     top: 132px;
-    margin-left: 68px;
-    height: 1210px;
+    margin-left: 74px;
+    height: 1260px;
   }
 
   @media screen and (min-width: 768px) {
@@ -58,7 +58,7 @@
 
 .programm-list {
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-left: 74px;
+    margin-left: 79px;
     margin-bottom: 50px;
   }
 
@@ -81,6 +81,7 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 5px;
+    padding-left: 32px;
   }
 
   @media screen and (min-width: 768px) {
@@ -115,7 +116,6 @@
 .programm-secondary-heading {
   padding-top: 6.5px;
   padding-bottom: 6.5px;
-  margin-bottom: 5px;
 
   font-family: var(--font-family-1);
   font-weight: bold;
@@ -152,9 +152,8 @@
 }
 
 .programm-text-list {
-  display: flex;
-
   @media screen and (min-width: 768px) {
+    display: flex;
     padding-left: 50px;
   }
 }
