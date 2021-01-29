@@ -1,0 +1,123 @@
+.guarantee {
+  padding-top: 50px;
+
+  @media screen and (min-width: 1680px) {
+    padding-top: 130px;
+  }
+}
+
+.guarantee-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: var(--font-family-1);
+  font-weight: 800;
+  font-size: var(--font-regular);
+  line-height: 26px;
+  letter-spacing: 0.03em;
+
+  color: var(--h-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-bottom: 50px;
+    font-size: var(--font-h-size);
+    line-height: 60px;
+  }
+}
+
+.guarantee-list {
+  padding: 30px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: #f1f1f1;
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    margin: 0 auto;
+    padding: 30px 50px 30px 79px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 1314px;
+    padding: 50px 112px 45px;
+  }
+}
+
+.guarantee-list__item {
+  position: relative;
+  padding-left: 35px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 39px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    padding-left: 52px;
+  }
+}
+
+.guarantee-list__item:not(:last-child) {
+  margin-bottom: 23px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.guarantee-list__item::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background: url('../images/svg/fire-mini.svg');
+  background-size: contain;
+
+  @media screen and (min-width: 1680px) {
+    width: 22px;
+    height: 30px;
+  }
+}
+
+.guarantee-list__item:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 68px;
+  top: 25px;
+  left: 7px;
+  background-image: url('../images/svg/dot-line.svg');
+
+  @media screen and (min-width: 768px) {
+    height: 30px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    height: 40px;
+    top: 34px;
+    left: 11px;
+  }
+}
+
+.guarantee-dscr {
+  font-family: var(--font-family-1);
+  font-weight: 500;
+  font-size: var(--font-m-size);
+  line-height: 20px;
+
+  color: var(--p-text-g-color);
+
+  @media screen and (min-width: 1680px) {
+    font-size: var(--font-regular);
+    line-height: 28px;
+  }
+}
+
+.accent-txt {
+  color: var(--accent-color);
+}
