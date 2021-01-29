@@ -54,11 +54,10 @@
     padding-left: 20px;
     padding-right: 30px;
 
-    
     z-index: 1;
   }
 
-  @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
     display: none;
     display: flex;
     align-items: center;
