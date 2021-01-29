@@ -297,8 +297,6 @@
     .contact-list {
       flex-direction: row;
       justify-content: space-between;
-      padding-right: 40px;
-      padding-left: 40px;
     }
     & .phone {
       border-right: 1px solid var(--p-text-color);
@@ -320,8 +318,8 @@
     }
   }
   .licence-text {
-    display: inline-block;
-    padding-left: 40px;
+    display: block;
+    margin-left: 25px;
   }
   .logo-link {
     width: 128px;
