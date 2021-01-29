@@ -1,17 +1,30 @@
 .page-programm {
-  position: relative;
   background-color: var(--h-text-color);
+  overflow: hidden;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-top: 50px;
-    padding-bottom: 470px;
-    margin-bottom: 231px;
+    padding-bottom: 502px;
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 200px;
     margin-bottom: 252px;
+  }
+}
+
+.programm-background {
+  position: relative;
+  width: 320px;
+  background-color: var(--p-dark-t-color);
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+
+    @media screen and (min-width: 1344px) {
+      width: 1344px;
+    }
   }
 }
 
@@ -45,20 +58,20 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     top: 132px;
-    margin-left: 74px;
-    height: 1260px;
+    margin-left: 64px;
+    height: 1240px;
   }
 
   @media screen and (min-width: 768px) {
     top: 156px;
     margin-left: 57px;
-    height: 693px;
+    height: 670px;
   }
 }
 
 .programm-list {
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-left: 79px;
+    margin-left: 70px;
     margin-bottom: 50px;
   }
 
@@ -116,6 +129,7 @@
 .programm-secondary-heading {
   padding-top: 6.5px;
   padding-bottom: 6.5px;
+  margin-bottom: 5px;
 
   font-family: var(--font-family-1);
   font-weight: bold;
@@ -187,13 +201,13 @@
 }
 
 .programm-photo {
-  display: block;
+  display: inline-block;
   position: absolute;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 176px;
     height: 137px;
-    top: 1392px;
+    top: 1431px;
     left: 200px;
   }
 
@@ -207,6 +221,8 @@
 
 .advantages-card {
   position: absolute;
+  top: 1463;
+  left: 20px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
