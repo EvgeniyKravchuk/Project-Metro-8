@@ -2,7 +2,6 @@
   position: relative;
   background-color: var(--h-text-color);
   padding-top: 50px;
-  padding-bottom: 537px;
 }
 
 .programm-heading {
@@ -18,33 +17,24 @@
   color: var(--p-dark-t-color);
 }
 
-.cards-semester {
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    margin-left: 68px;
-  }
-}
-
-.list-heading {
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
-}
-
-.list-heading::before {
-  content: '';
-  display: inline-block;
-
+.programm-points {
+  position: absolute;
+  top: 132px;
+  display: block;
   width: 12px;
-  height: 12px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
+  height: 1192px;
+  margin-left: 68px;
+  border-right: 1px solid #ffffff;
+}
 
-  @media screen and (min-width: 320px) {
-    margin-right: 20px;
-  }
+.programm-list {
+  margin-left: 100px;
+  margin-bottom: 50px;
 }
 
 .programm-list-heading {
+  margin-bottom: 5px;
+
   font-family: var(--font-family-1);
   font-weight: bold;
   font-size: 14px;
@@ -55,19 +45,14 @@
   color: var(--p-dark-t-color);
 }
 
-.programm-text-list {
-  @media screen and (min-width: 320px) {
-    padding-left: 32px;
-  }
-}
-
 .programm-secondary-heading {
-  margin-bottom: 5px;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
 
   font-family: var(--font-family-1);
   font-weight: bold;
   font-size: 12px;
-  line-height: 164.9%;
+  line-height: 1.6;
   letter-spacing: 0.08em;
   color: var(--accent-color);
   text-transform: none;
@@ -98,8 +83,83 @@
   margin-bottom: 8px;
 }
 
-.programm-photo-set {
+.programm-photo {
+  width: 176px;
+  height: 137px;
+  display: block;
   position: absolute;
-  bottom: 440px;
+  top: 1373px;
   left: 200px;
+}
+
+// Карточка с преимуществами //
+
+.advantages-card {
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.prodramm-advantages {
+  background: var(--p-dark-t-color);
+
+  width: 280px;
+  padding: 20px 14px 20px 30px;
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    padding: 30px 118px 25px 98px;
+  }
+  @media screen and (min-width: 1680px) {
+    width: 1314px;
+    padding: 70px 82px 70px 84px;
+  }
+}
+
+.advantages-heading {
+  font-family: var(--font-family-1);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+
+  color: var(--p-dark-t-color);
+
+  background-color: var(--h-text-color);
+  width: 280px;
+  height: 80px;
+  padding-right: 140px;
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+  }
+  @media screen and (min-width: 1680px) {
+    width: 1314px;
+  }
+}
+
+.advantages-heading-secondary {
+  margin-bottom: 10px;
+
+  font-family: var(--font-family-1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 164.9%;
+  letter-spacing: 0.08em;
+
+  color: var(--accent-color);
+}
+
+.advantages-text {
+  font-family: var(--font-family-1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+
+  color: #111518;
+}
+
+.advantages-list {
+  margin-bottom: 20px;
 }
