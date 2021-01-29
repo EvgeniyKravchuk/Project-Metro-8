@@ -2,6 +2,8 @@
   position: relative;
   background-color: var(--h-text-color);
   padding-top: 50px;
+  padding-bottom: 470px;
+  margin-bottom: 231px;
 }
 
 .programm-heading {
@@ -22,7 +24,7 @@
   top: 132px;
   display: block;
   width: 12px;
-  height: 1192px;
+  height: 1210px;
   margin-left: 68px;
   border-right: 1px solid #ffffff;
 }
@@ -105,13 +107,14 @@
   height: 137px;
   display: block;
   position: absolute;
-  top: 1373px;
+  top: 1392px;
   left: 200px;
 }
 
 // Карточка с преимуществами //
 
 .advantages-card {
+  position: absolute;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
@@ -139,8 +142,7 @@
   letter-spacing: 0.03em;
 
   color: var(--p-dark-t-color);
-
-  background-color: var(--h-text-color);
+  background-color: transparent;
   width: 280px;
   height: 80px;
   padding-right: 140px;
