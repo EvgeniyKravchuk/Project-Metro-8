@@ -82,6 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: baseline;
     padding-top: 30px;
     padding-bottom: 30px;
     &-item {
@@ -112,7 +113,9 @@
 .logo-link {
   display: flex;
   align-items: center;
+  justify-content: baseline;
   flex-wrap: wrap;
+  flex-basis: content;
 }
 
 .logo-text {
@@ -411,6 +414,8 @@
     }
     .contact-list {
       flex-direction: row;
+      padding-right: 183px;
+      padding-left: 183px;
       width: 1314px;
     }
     & .phone {

@@ -41,11 +41,6 @@
 .menu-container {
   &.is-open {
     display: block;
-    @media screen and (min-width: 320px) and(max-width: 767px){
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -61,14 +56,13 @@
 
     background-color: rgba(17, 21, 24, 0.9);
 
-    
     padding-left: 20px;
     padding-right: 30px;
 
     z-index: 1;
   }
 
-    @media screen and (min-width: 1344px) {
+  @media screen and (min-width: 1344px) {
     display: none;
     display: flex;
     align-items: center;
