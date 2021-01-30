@@ -1,34 +1,27 @@
+// .programm-background {
+
+//   height: 2050px;
+//   width: 100%;
+
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
 .page-programm {
+  position: relative;
   background-color: var(--h-text-color);
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-top: 50px;
     padding-bottom: 477px;
     margin-bottom: 270px;
+    overflow: hidden;
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 200px;
     margin-bottom: 294px;
-  }
-}
-
-.programm-background {
-  position: relative;
-  overflow: hidden;
-  width: 320px;
-  background-color: var(--p-dark-t-color);
-
-  margin-right: auto;
-  margin-left: auto;
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-
-    @media screen and (min-width: 1344px) {
-      width: 1344px;
-    }
   }
 }
 
@@ -54,7 +47,7 @@
 
 .programm-heading-box {
   @media screen and (min-width: 768px) {
-    margin-left: 40px;
+    margin-left: 25px;
   }
 }
 
@@ -91,7 +84,7 @@
 }
 
 .programm-list-heading {
-  position: relative;
+  // position: relative;
 
   font-family: var(--font-family-1);
   font-weight: bold;
@@ -216,13 +209,13 @@
   @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 176px;
     height: 137px;
-    top: 1431px;
-    left: 200px;
+
+    top: 1473px;
+    right: -56px;
   }
 
   @media screen and (min-width: 768px) {
     top: 800px;
-    right: 0;
   }
 }
 
@@ -230,12 +223,13 @@
 
 .advantages-card {
   position: absolute;
-  left: 20px;
 
+  top: 1563px;
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: 768px) {
-    left: 40px;
   }
 }
 
