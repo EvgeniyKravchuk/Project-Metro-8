@@ -82,7 +82,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: baseline;
     padding-top: 30px;
     padding-bottom: 30px;
     &-item {
@@ -113,9 +112,7 @@
 .logo-link {
   display: flex;
   align-items: center;
-  justify-content: baseline;
   flex-wrap: wrap;
-  flex-basis: content;
 }
 
 .logo-text {
@@ -266,6 +263,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1343px) {
   .footer {
+    .container {
+      align-items: center;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
     & .contact-form {
       display: block;
       width: 100%;
@@ -319,7 +321,6 @@
   }
   .licence-text {
     display: block;
-    margin-left: 25px;
   }
   .logo-link {
     width: 128px;
@@ -414,8 +415,6 @@
     }
     .contact-list {
       flex-direction: row;
-      padding-right: 183px;
-      padding-left: 183px;
       width: 1314px;
     }
     & .phone {
@@ -475,7 +474,9 @@
     color: var(--accent-color);
   }
   .licence-container {
-    padding-left: 183px;
+    .container {
+      align-items: flex-start;
+    }
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1344px),
