@@ -110,7 +110,7 @@
   .problems {
     padding-top: 100px;
     padding-bottom: 282px;
-    background-image: url(../images/problems/fire.png);
+    background-image: url(../images/problems/fire-x1.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 455px 472px;
@@ -159,5 +159,12 @@
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 1.65;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .problems {
+    background-image: url(../images/problems/fire-x2.png);
   }
 }
