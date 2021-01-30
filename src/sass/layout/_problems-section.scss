@@ -17,6 +17,9 @@
   letter-spacing: 0.03em;
   color: var(--p-dark-t-color);
 }
+.problems-title > span {
+  display: block;
+}
 
 .problems-text {
   color: var(--accent-color);
