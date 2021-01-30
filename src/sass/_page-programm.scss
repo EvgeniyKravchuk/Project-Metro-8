@@ -19,9 +19,12 @@
   }
 
   @media screen and (min-width: 768px) {
+    padding-bottom: 223px;
     padding-top: 60px;
-    padding-bottom: 200px;
-    margin-bottom: 294px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    padding-top: 120px;
   }
 }
 
@@ -43,11 +46,10 @@
     font-size: 26px;
     margin-bottom: 52px;
   }
-}
 
-.programm-heading-box {
-  @media screen and (min-width: 768px) {
-    margin-left: 25px;
+  @media screen and (min-width: 1344px) {
+    font-size: 46px;
+    margin-bottom: 92px;
   }
 }
 
@@ -56,18 +58,26 @@
   display: block;
   width: 12px;
 
-  border-right: 1px solid #ffffff;
-
   @media screen and (min-width: 320px) and (max-width: 767px) {
     top: 132px;
     margin-left: 64px;
     height: 1240px;
+    border-right: 1px solid #ffffff;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
     top: 156px;
-    margin-left: 88px;
+    margin-left: 52px;
     height: 685px;
+    border-right: 1px solid #ffffff;
+  }
+
+  @media screen and (min-width: 1344px) {
+    border-bottom: 1px solid #ffffff;
+    height: 12px;
+    width: 1685px;
+    top: 265px;
+    left: 0;
   }
 }
 
@@ -77,15 +87,43 @@
     margin-bottom: 50px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-left: 94px;
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-left: 58px;
     margin-bottom: 189px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    display: flex;
+    margin-top: 92px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1343px) {
+  .cards-semester:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .cards-semester:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .cards-semester:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .cards-semester {
+    width: 240px;
   }
 }
 
 .programm-list-heading {
-  // position: relative;
-
+  position: relative;
   font-family: var(--font-family-1);
   font-weight: bold;
   font-size: 14px;
@@ -95,13 +133,24 @@
   color: var(--p-dark-t-color);
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-bottom: 5px;
     padding-left: 32px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 5px;
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
     padding-left: 50px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-top: 52px;
+  }
+}
+
+.list-heading-numero {
+  @media screen and (min-width: 1344px) {
+    font-size: 30px;
+    line-height: 0.9;
   }
 }
 
@@ -112,19 +161,31 @@
   background: #ff6b09;
   border-radius: 50%;
 
-  @media screen and (min-width: 320px) and (max-width: 1680px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 3px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 3px;
+  @media screen and (min-width: 1344px) {
+    width: 17px;
+    height: 17px;
   }
 }
 
 .list-heading {
-  @media screen and (min-width: 320px) and (max-width: 1687px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 320px) {
+    margin-bottom: 25px;
   }
 }
 
@@ -140,6 +201,12 @@
   letter-spacing: 0.08em;
   color: var(--accent-color);
   text-transform: none;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 164.9%;
+    margin-bottom: 10px;
+  }
 }
 
 .programm-item {
@@ -153,22 +220,15 @@
 
   text-transform: none;
   opacity: 0.5;
-}
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .cards-semester:not(:last-child) {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .cards-semester:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 1344px) {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
 
 .programm-text-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
     display: flex;
     padding-left: 50px;
   }
@@ -181,7 +241,7 @@
     padding-left: 32px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
     &:not(:first-child) {
       margin-left: 50px;
     }
@@ -191,8 +251,12 @@
     }
 
     &:nth-child(2) {
-      width: 155px;
+      width: 156px;
     }
+  }
+
+  @media screen and (min-width: 1344px) {
+    margin-bottom: 25px;
   }
 }
 
@@ -215,7 +279,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    top: 800px;
+    top: 822px;
+    right: 0;
   }
 }
 
@@ -230,6 +295,7 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: 768px) {
+    top: 1152px;
   }
 }
 
