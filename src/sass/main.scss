@@ -1,10 +1,12 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
-@import './other/container';
-@import './other/normalize';
+@import './base/container';
+@import './base/normalize';
+@import './layout/header';
+@import './layout/menu';
+@import './layout/hero';
+@import './layout/education';
+@import './layout/page-programm';
+@import './layout/teacher';
+@import './layout/guarantee';
 @import './layout/reviews';
+@import './layout/footer';
