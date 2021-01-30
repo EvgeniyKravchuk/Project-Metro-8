@@ -1,24 +1,27 @@
 .page-programm {
   background-color: var(--h-text-color);
-  overflow: hidden;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-top: 50px;
     padding-bottom: 477px;
+    margin-bottom: 270px;
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 200px;
-    margin-bottom: 252px;
+    margin-bottom: 294px;
   }
 }
 
 .programm-background {
   position: relative;
+  overflow: hidden;
   width: 320px;
   background-color: var(--p-dark-t-color);
-  padding-bottom: 270px;
+
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -30,8 +33,6 @@
 }
 
 .programm-heading {
-  display: block;
-
   font-family: var(--font-family-1);
   font-weight: 800;
   font-size: 20px;
@@ -41,12 +42,19 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     text-align: center;
+
     margin-bottom: 43px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
     margin-bottom: 52px;
+  }
+}
+
+.programm-heading-box {
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
   }
 }
 
@@ -65,8 +73,8 @@
 
   @media screen and (min-width: 768px) {
     top: 156px;
-    margin-left: 57px;
-    height: 670px;
+    margin-left: 88px;
+    height: 685px;
   }
 }
 
@@ -77,7 +85,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 63px;
+    margin-left: 94px;
     margin-bottom: 189px;
   }
 }
@@ -222,9 +230,13 @@
 
 .advantages-card {
   position: absolute;
-
   left: 20px;
+
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width: 768px) {
+    left: 40px;
+  }
 }
 
 .prodramm-advantages {
