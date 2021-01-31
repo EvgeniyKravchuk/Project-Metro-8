@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     &-field {
-      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
     &-input {
       border: 1px solid #fff;
@@ -78,6 +78,7 @@
     padding-top: 14px;
     padding-bottom: 14px;
     cursor: pointer;
+    text-transform: uppercase;
   }
   .contact-list {
     display: flex;
@@ -98,7 +99,6 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     color: var(--h-text-color);
-  
   }
 }
 .instagram-icon {
@@ -270,8 +270,8 @@
     & .contact-form {
       display: block;
       width: 100%;
-      padding-top: 100px;
-      padding-bottom: 62px;
+      padding-top: 50px;
+      padding-bottom: 71px;
       background-image: url('/images/footer/tablet_footer_1.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -284,9 +284,10 @@
     &-text {
       margin-bottom: 40px;
       font-size: var(--font-size-main);
-      line-height: 1.545;
+      line-height: 1.214;
     }
     .modal-form {
+      margin-bottom: 0px;
       &-input {
         width: 390px;
         height: 48px;
@@ -294,6 +295,7 @@
     }
     &-btn {
       margin-top: 11px;
+      height: 48px;
     }
     .contact-list {
       flex-direction: row;
