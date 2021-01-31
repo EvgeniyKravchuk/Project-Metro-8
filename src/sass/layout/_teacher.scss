@@ -148,17 +148,12 @@
 
 .teacher-education-list {
   display: block;
-  min-width: 279;
+  width: 279;
   margin-bottom: 10px;
   list-style: none;
 
-  @media screen and (min-width: 768px) {
-    width: 402px;
-  }
-
   @media screen and (min-width: 1344px) {
     margin-bottom: 19px;
-    width: 670px;
   }
 
   &-item:not(:last-child) {
