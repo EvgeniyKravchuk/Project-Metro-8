@@ -5,7 +5,6 @@
 .page-programm {
   position: relative;
   background-color: var(--h-text-color);
-  overflow: hidden;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-top: 50px;
@@ -13,13 +12,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 212px;
+    padding-bottom: 401px;
     padding-top: 60px;
   }
 
   @media screen and (min-width: 1344px) {
     padding-top: 120px;
-    padding-bottom: 150px;
+    padding-bottom: 314px;
   }
 }
 
@@ -69,7 +68,7 @@
   @media screen and (min-width: 1344px) {
     border-bottom: 1px solid #ffffff;
     height: 12px;
-    width: 1685px;
+    width: 100%;
     top: 265px;
     left: 0;
   }
@@ -78,18 +77,15 @@
 .programm-list {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-left: 70px;
-    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1343px) {
     margin-left: 58px;
-    margin-bottom: 189px;
   }
 
   @media screen and (min-width: 1344px) {
     display: flex;
     margin-top: 89px;
-    margin-bottom: 164px;
   }
 }
 
@@ -261,26 +257,74 @@
   }
 }
 
-.programm-photo {
-  display: inline-block;
-  position: absolute;
-
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    width: 176px;
-    height: 137px;
-
-    top: 1473px;
-    right: -56px;
+.programm-background {
+  @media screen and (min-width: 320px) {
+    background-image: url('../images/program/mob_program_1.png');
+    background-repeat: no-repeat;
+    background-size: 120px 137px;
+    background-position: 200px 1430px;
   }
 
   @media screen and (min-width: 768px) {
-    top: 822px;
-    right: 0;
+    background-image: url('../images/program/tablet_program_1.png');
+    background-repeat: no-repeat;
+    background-size: 384px 280px;
+    background-position: 384px 822px;
   }
 
   @media screen and (min-width: 1344px) {
-    top: 685px;
-    left: 0;
+    background-image: url('../images/program/desktop_program_1.png');
+    background-repeat: no-repeat;
+    background-size: 672px 502px;
+    background-position: 0px 676px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .background {
+      background-image: url('../images/program/mob_program_1@2x.png');
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .background {
+      background-image: url('../images/program/tablet_program_1@2x.png');
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1344px),
+    screen and (min-resolution: 192dpi) and (min-width: 1344px),
+    screen and (min-resolution: 2dppx) and (min-width: 1344px) {
+    .background {
+      background-image: url('../images/program/desktop_program_1@2x.png');
+    }
+  }
+}
+
+.programm-background {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 320px;
+    height: 2045px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 1339px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 1344px;
+    height: 1227px;
+    left: 39%;
   }
 }
 
@@ -289,7 +333,7 @@
 .advantages-card {
   position: absolute;
 
-  top: 1563px;
+  top: 1515px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
