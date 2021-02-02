@@ -65,6 +65,7 @@
   &__card {
     padding: 20px;
     margin-bottom: 20px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     @media screen and (min-width: 768px) {
       padding: 40px;
       padding-bottom: 30px;
