@@ -109,6 +109,7 @@
 }
 .phone-icon {
   width: 20px;
+  height: 20px;
   padding-right: 10px;
 }
 .logo-link {
@@ -203,7 +204,8 @@
         font-size: 14px;
         line-height: 1.214;
         &-icon {
-          width: 30;
+          width: 30px;
+          height: 30px;
         }
       }
     }
@@ -307,6 +309,7 @@
       padding-right: 24px;
       &-icon {
         width: 35px;
+        height: 35px;
       }
     }
     .tel-i-wrapper {
@@ -420,8 +423,8 @@
       line-height: 1.233;
       padding-right: 24px;
       &-icon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         margin-right: 15px;
       }
     }
