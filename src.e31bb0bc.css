@@ -241,9 +241,10 @@ ol {
   text-transform: uppercase;
   color: var(--accent-color);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__button {
     display: block;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -398,6 +399,7 @@ ol {
 @media screen and (min-width: 1344px) {
   .hero {
     padding-top: 228px;
+    padding-bottom: 130px;
     min-width: 1344px;
     background-image: url(/hero-bckg-d.7c413fe8.png);
     background-size: 1680px 878px;
