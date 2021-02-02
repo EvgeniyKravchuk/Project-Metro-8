@@ -8,7 +8,7 @@
       url(../images/hero/hero-m-bckg.jpg);
     background-repeat: no-repeat;
     background-size: 208px 178px, 100% 658px;
-    background-position: top 394 center, top center;
+    background-position: top 394px center, top center;
 
     @media screen and (min-resolution: 2dppx) {
       background-image: url(../images/hero/hero-m-image@2x.png);
@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url(../images/hero/hero-bckg-d@2x.png);
+      background-image: url(../images/hero/hero-bckg-t-@2x.png);
     }
   }
 
