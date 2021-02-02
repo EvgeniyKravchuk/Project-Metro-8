@@ -374,7 +374,7 @@ ol {
     background-image: url(/hero-m-image.499d4498.png), url(/hero-m-bckg.02ada2a5.jpg);
     background-repeat: no-repeat;
     background-size: 208px 178px, 100% 658px;
-    background-position: top 394 center, top center;
+    background-position: top 394px center, top center;
   }
 }
 @media screen and (max-width: 767px) and (min-resolution: 2dppx) {
@@ -393,7 +393,7 @@ ol {
 }
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/hero-bckg-d@2x.f380300e.png);
+    background-image: url(/hero-bckg-t-@2x.e3aa4f3e.png);
   }
 }
 @media screen and (min-width: 1344px) {
@@ -825,15 +825,16 @@ ol {
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: var(--p-dark-t-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
-}
-
-.education-link {
   text-decoration: none;
   text-align: center;
 }
 
+/* .education-link {
+  text-decoration: none;
+  text-align: center;
+} */
 .education-img {
   display: block;
   margin: 0 auto;
@@ -850,6 +851,7 @@ ol {
   font-size: var(--font-size-main);
   line-height: 1.429;
   color: var(--h-text-color);
+  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .education-name {
@@ -860,6 +862,7 @@ ol {
   line-height: 1.667;
   color: var(--p-text-color);
   margin: 0 auto;
+  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mark {
@@ -1091,7 +1094,6 @@ ol {
 .page-programm {
   position: relative;
   background-color: var(--h-text-color);
-  overflow: hidden;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .page-programm {
@@ -1101,14 +1103,14 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .page-programm {
-    padding-bottom: 212px;
+    padding-bottom: 401px;
     padding-top: 60px;
   }
 }
 @media screen and (min-width: 1344px) {
   .page-programm {
     padding-top: 120px;
-    padding-bottom: 150px;
+    padding-bottom: 314px;
   }
 }
 
@@ -1163,7 +1165,7 @@ ol {
   .programm-line {
     border-bottom: 1px solid #ffffff;
     height: 12px;
-    width: 1685px;
+    width: 100%;
     top: 265px;
     left: 0;
   }
@@ -1172,20 +1174,17 @@ ol {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .programm-list {
     margin-left: 70px;
-    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1343px) {
   .programm-list {
     margin-left: 58px;
-    margin-bottom: 189px;
   }
 }
 @media screen and (min-width: 1344px) {
   .programm-list {
     display: flex;
     margin-top: 89px;
-    margin-bottom: 164px;
   }
 }
 
@@ -1358,34 +1357,76 @@ ol {
     margin-bottom: 8px;
   }
 }
-.programm-photo {
-  display: inline-block;
-  position: absolute;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .programm-photo {
-    width: 176px;
-    height: 137px;
-    top: 1473px;
-    right: -56px;
+@media screen and (min-width: 320px) {
+  .programm-background {
+    background-image: url("/mob_program_1.165c5684.png");
+    background-repeat: no-repeat;
+    background-size: 120px 137px;
+    background-position: 200px 1430px;
   }
 }
 @media screen and (min-width: 768px) {
-  .programm-photo {
-    top: 822px;
-    right: 0;
+  .programm-background {
+    background-image: url("/tablet_program_1.a243e282.png");
+    background-repeat: no-repeat;
+    background-size: 384px 280px;
+    background-position: 384px 822px;
   }
 }
 @media screen and (min-width: 1344px) {
-  .programm-photo {
-    top: 685px;
-    left: 0;
+  .programm-background {
+    background-image: url("/desktop_program_1.6c2f9f51.png");
+    background-repeat: no-repeat;
+    background-size: 672px 502px;
+    background-position: 0px 676px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .programm-background .background {
+    background-image: url("/mob_program_1@2x.df2cb92e.png");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .programm-background .background {
+    background-image: url("/tablet_program_1@2x.7f00f8b0.png");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1344px), screen and (min-resolution: 192dpi) and (min-width: 1344px), screen and (min-resolution: 2dppx) and (min-width: 1344px) {
+  .programm-background .background {
+    background-image: url("/desktop_program_1@2x.14b163d7.png");
+  }
+}
+
+.programm-background {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .programm-background {
+    width: 320px;
+    height: 2045px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .programm-background {
+    width: 768px;
+    height: 1339px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .programm-background {
+    width: 1344px;
+    height: 1227px;
+    left: 39%;
   }
 }
 
 .advantages-card {
   position: absolute;
-  top: 1563px;
+  top: 1515px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -1953,6 +1994,7 @@ ol {
 .reviews__card {
   padding: 20px;
   margin-bottom: 20px;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 @media screen and (min-width: 768px) {
   .reviews__card {
@@ -2228,8 +2270,8 @@ ol {
 }
 
 .phone-icon {
-  width: 20;
-  height: 21;
+  width: 20px;
+  height: 20px;
   padding-right: 10px;
 }
 
@@ -2328,7 +2370,8 @@ ol {
     line-height: 1.214;
   }
   .footer .contact-list-item .phone-icon {
-    width: 30;
+    width: 30px;
+    height: 30px;
   }
   .footer .instagram-icon {
     margin-top: 9px;
@@ -2427,7 +2470,8 @@ ol {
     padding-right: 24px;
   }
   .footer .phone-icon {
-    width: 35;
+    width: 35px;
+    height: 35px;
   }
   .footer .tel-i-wrapper {
     display: flex;
@@ -2537,8 +2581,8 @@ ol {
     padding-right: 24px;
   }
   .footer .phone-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 15px;
   }
   .footer .tel-i-wrapper {
