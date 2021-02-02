@@ -1,31 +1,23 @@
-.guarantee {
-  padding-top: 50px;
-
-  @media screen and (min-width: 1680px) {
-    padding-top: 130px;
-  }
-}
-
 .guarantee-title {
   margin-bottom: 30px;
   text-align: center;
   font-family: var(--font-family-1);
   font-weight: 800;
-  font-size: var(--font-regular);
-  line-height: 26px;
+  font-size: 26px;
+  line-height: 1.307;
   letter-spacing: 0.03em;
 
   color: var(--h-text-color);
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
-    line-height: 34px;
+    line-height: 1.416;
   }
 
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1344px) {
     margin-bottom: 50px;
     font-size: var(--font-h-size);
-    line-height: 60px;
+    line-height: 1.304;
   }
 }
 
@@ -41,7 +33,7 @@
     padding: 30px 50px 30px 79px;
   }
 
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1344px) {
     width: 1314px;
     padding: 50px 112px 45px;
   }
@@ -55,7 +47,7 @@
     padding-left: 39px;
   }
 
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1344px) {
     padding-left: 52px;
   }
 }
@@ -78,7 +70,7 @@
   background: url('../images/svg/fire-mini.svg');
   background-size: contain;
 
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1344px) {
     width: 22px;
     height: 30px;
   }
@@ -97,7 +89,7 @@
     height: 30px;
   }
 
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1344px) {
     height: 40px;
     top: 34px;
     left: 11px;
@@ -108,13 +100,13 @@
   font-family: var(--font-family-1);
   font-weight: 500;
   font-size: var(--font-m-size);
-  line-height: 20px;
+  line-height: 1.666;
 
   color: var(--p-text-g-color);
 
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1344px) {
     font-size: var(--font-regular);
-    line-height: 28px;
+    line-height: 1.4;
   }
 }
 

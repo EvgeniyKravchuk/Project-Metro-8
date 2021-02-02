@@ -1,3 +1,20 @@
+.menu-container .container {
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding-top: 109px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 160px;
+  }
+  @media screen and (min-width: 1344px) {
+    width: 648px;
+    padding: 0px;
+  }
+}
+
 .menu-button {
   display: inline-flex;
   margin-left: auto;
@@ -55,9 +72,6 @@
     height: 100vh;
 
     background-color: rgba(17, 21, 24, 0.9);
-
-    padding-left: 20px;
-    padding-right: 30px;
 
     z-index: 1;
   }

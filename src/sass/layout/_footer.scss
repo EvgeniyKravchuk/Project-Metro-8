@@ -32,12 +32,13 @@
     justify-content: center;
     align-items: center;
     &-field {
-      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
     &-input {
       border: 1px solid #fff;
       background-color: var(--f-color);
       color: var(--f-input-color);
+      padding-left: 28px;
       &:focus {
         outline: none;
       }
@@ -77,6 +78,7 @@
     padding-top: 14px;
     padding-bottom: 14px;
     cursor: pointer;
+    text-transform: uppercase;
   }
   .contact-list {
     display: flex;
@@ -106,8 +108,9 @@
   display: block;
 }
 .phone-icon {
-  width: 15px;
-  height: 21px;
+  width: 20;
+  height: 21;
+  padding-right: 10px;
 }
 .logo-link {
   display: flex;
@@ -201,7 +204,7 @@
         font-size: 14px;
         line-height: 1.214;
         &-icon {
-          width: 20px;
+          width: 30;
         }
       }
     }
@@ -220,27 +223,23 @@
     justify-content: center;
   }
   .logo-link {
-    width: 95px;
+    width: 85px;
   }
   .logo-pic {
-    width: 15px;
-    height: 21px;
+    width: 19px;
+    height: 25px;
+    padding-right: 2px;
+    padding-left: 2px;
   }
   .logo-text {
-    font-family: var(--font-family-1);
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.36;
+    font-size: 16px;
+    line-height: 1.23;
     letter-spacing: 0.04em;
     color: var(--h-text-color);
     &-small {
-      font-family: var(--font-family-1);
-      font-style: normal;
-      font-weight: bold;
       font-size: 6px;
-      line-height: 1.25;
-      letter-spacing: 0.18em;
+      line-height: 1.16;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--h-text-color);
     }
@@ -271,8 +270,8 @@
     & .contact-form {
       display: block;
       width: 100%;
-      padding-top: 100px;
-      padding-bottom: 62px;
+      padding-top: 50px;
+      padding-bottom: 71px;
       background-image: url('/images/footer/tablet_footer_1.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -285,9 +284,10 @@
     &-text {
       margin-bottom: 40px;
       font-size: var(--font-size-main);
-      line-height: 1.545;
+      line-height: 1.214;
     }
     .modal-form {
+      margin-bottom: 0px;
       &-input {
         width: 390px;
         height: 48px;
@@ -295,6 +295,7 @@
     }
     &-btn {
       margin-top: 11px;
+      height: 48px;
     }
     .contact-list {
       flex-direction: row;
@@ -306,7 +307,7 @@
       line-height: 1.2;
       padding-right: 24px;
       &-icon {
-        width: 24px;
+        width: 35;
       }
     }
     .tel-i-wrapper {
@@ -326,24 +327,20 @@
     width: 128px;
   }
   .logo-pic {
-    width: 22px;
-    height: 30px;
+    width: 26px;
+    height: 34px;
+    padding-right: 4px;
+    padding-left: 4px;
   }
   .logo-text {
-    font-family: var(--font-family-1);
-    font-style: normal;
-    font-weight: 800;
     font-size: 26px;
-    line-height: 1.231;
+    line-height: 1.23;
     letter-spacing: 0.04em;
     color: var(--h-text-color);
     &-small {
-      font-family: var(--font-family-1);
-      font-style: normal;
-      font-weight: bold;
       font-size: 8px;
       line-height: 1.25;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--h-text-color);
     }
@@ -400,6 +397,7 @@
       &-input {
         width: 478px;
         height: 70px;
+        padding-left: 40px;
         &::placeholder {
           font-size: var(--font-regular);
           line-height: 1.2;
@@ -423,8 +421,8 @@
       line-height: 1.233;
       padding-right: 24px;
       &-icon {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         margin-right: 15px;
       }
     }
@@ -448,13 +446,12 @@
     width: 128px;
   }
   .logo-pic {
-    width: 22px;
-    height: 30px;
+    width: 26px;
+    height: 34px;
+    padding-right: 4px;
+    padding-left: 4px;
   }
   .logo-text {
-    font-family: var(--font-family-1);
-    font-style: normal;
-    font-weight: 800;
     font-size: 26px;
     line-height: 1.231;
     letter-spacing: 0.04em;
@@ -465,7 +462,7 @@
       font-weight: bold;
       font-size: 8px;
       line-height: 1.25;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--h-text-color);
     }

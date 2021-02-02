@@ -1,0 +1,187 @@
+.problems {
+  position: relative;
+  font-family: var(--font-family-1);
+  font-style: normal;
+  padding-top: 50px;
+  padding-bottom: 367px;
+  background-color: var(--h-text-color);
+}
+
+.problems-title {
+  font-family: var(--font-family-1);
+  text-align: left;
+  width: 280px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: var(--p-dark-t-color);
+}
+.problems-title > span {
+  display: block;
+}
+
+.problems-text {
+  color: var(--accent-color);
+}
+
+.problems-list {
+  width: 280px;
+  height: 488px;
+  text-align: left;
+  width: 280px;
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--p-dark-t-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 14px;
+}
+
+.problems-list-item {
+  height: 69px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+  color: var(--h-text-color);
+  &:first-child {
+    height: 53px;
+  }
+}
+
+.problems-list-text {
+  margin-bottom: 5px;
+  line-height: 1.21;
+  color: var(--accent-color);
+}
+
+.problems-list-text,
+.problems-list-text-item {
+  display: block;
+  height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .problems-list-item {
+    &:nth-child(4) {
+      padding-right: 120px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .problems {
+    padding-top: 60px;
+    padding-bottom: 176px;
+  }
+
+  .problems-title {
+    width: 568px;
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .problems-list {
+    top: 188px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 688px;
+    height: 303px;
+    padding-left: 96px;
+    padding-right: 109px;
+    padding-top: 30px;
+    padding-bottom: 26px;
+  }
+  .problems-list-item {
+    width: calc((100% - 22px) / 2);
+    &:nth-child(1) {
+      margin-bottom: 24px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 8px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 32px;
+    }
+    &:nth-child(4) {
+      margin-bottom: 32px;
+      padding-right: 100px;
+    }
+    &:not(:nth-child(2n + 2)) {
+      margin-right: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .problems {
+    padding-top: 100px;
+    padding-bottom: 282px;
+    background-image: url(../images/problems/fire-x1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 455px 472px;
+  }
+  .problems-title {
+    width: 866px;
+    font-size: 46px;
+    line-height: 1.3;
+  }
+  .problems-list {
+    top: 348px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1314px;
+    height: 362px;
+    padding-left: 114px;
+    padding-right: 112px;
+    padding-top: 70px;
+    padding-bottom: 62px;
+  }
+  .problems-list-item {
+    width: calc((100% - 2 * 40px) / 3);
+    font-size: 20px;
+    line-height: 1.4;
+    &:not(:nth-child(3n)) {
+      margin-right: 40px;
+    }
+    &:nth-child(1) {
+      margin-bottom: 64px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 32px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 32px;
+    }
+    &:nth-child(4) {
+      margin-bottom: 32px;
+    }
+    &:nth-child(6) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .problems-list-text {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .problems {
+    background-image: url(../images/problems/fire-x2.png);
+  }
+}
