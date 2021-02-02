@@ -50,6 +50,7 @@
 }
 .education-icon {
   fill: var(--accent-color);
+  transition: fill 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .education-title {
   font-family: var(--font-family-1);
